@@ -23,7 +23,7 @@ LABEL maintainer="Paul Sladek" \
 ENV HOME /home/${user}
 ENV AGENT_WORKDIR=${AGENT_WORKDIR}
 
-RUN yum install shadow-utils.x86_64 -y
+RUN yum install shadow-utils.x86_64 -y && amazon-linux-extras install corretto8
 
 RUN groupadd -g ${gid} ${group}
 
