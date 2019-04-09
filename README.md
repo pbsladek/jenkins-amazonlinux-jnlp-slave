@@ -1,11 +1,11 @@
 Jenkins Amazon Linux jnlp slave base
 ===
 
-[![Docker Stars](https://img.shields.io/docker/stars/pwbsladek/jenkins-amazonlinux-jnlp-slave-base.svg)](https://hub.docker.com/r/pwbsladek/jenkins-amazonlinux-jnlp-slave-base)
-[![Docker Pulls](https://img.shields.io/docker/pulls/pwbsladek/jenkins-amazonlinux-jnlp-slave-base.svg)](https://hub.docker.com/r/pwbsladek/jenkins-amazonlinux-jnlp-slave-base)
-[![Docker Automated build](https://img.shields.io/docker/automated/pwbsladek/jenkins-amazonlinux-jnlp-slave-base.svg)](https://hub.docker.com/r/pwbsladek/jenkins-amazonlinux-jnlp-slave-base)
+[![Docker Stars](https://img.shields.io/docker/stars/pwbsladek/jenkins-amazonlinux2-jnlp-slave-base.svg)](https://hub.docker.com/r/pwbsladek/jenkins-amazonlinux2-jnlp-slave-base)
+[![Docker Pulls](https://img.shields.io/docker/pulls/pwbsladek/jenkins-amazonlinux2-jnlp-slave-base.svg)](https://hub.docker.com/r/pwbsladek/jenkins-amazonlinux2-jnlp-slave-base)
+[![Docker Automated build](https://img.shields.io/docker/automated/pwbsladek/jenkins-amazonlinux2-jnlp-slave-base.svg)](https://hub.docker.com/r/pwbsladek/jenkins-amazonlinux2-jnlp-slave-base)
 
-#Description
+## Description
 
 Based on [jenkins/slave/ Dockerfile](https://hub.docker.com/r/jenkins/slave/dockerfile) and 
 [jenkins/jnlp-slave/ Dockerfile](https://hub.docker.com/r/jenkins/jnlp-slave/dockerfile).
@@ -16,7 +16,7 @@ This is a base image for Docker, which includes Java 8 via Amazon Corretto and t
 
 ## Usage
 
-This image is used as the basis for the [Jenkins Amazon Linux 2 JNLP Agent](https://github.com/pbsladek/jenkins-amazonlinux-jnlp-slave/) image.
+This image is used as the basis for the [Jenkins Amazon Linux 2 JNLP Agent](https://github.com/pbsladek/jenkins-amazonlinux2-jnlp-slave/) image.
 In that image, the container is launched externally and attaches to Jenkins.
 
 This image may instead be used to launch an agent using the **Launch method** of **Launch agent via execution of command on the master**. Try for example

@@ -1,5 +1,5 @@
 ROOT:=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
-IMAGE_NAME:=pbsladek/jenkins-amazonlinux2-jnlp-slave-base:latest
+IMAGE_NAME:=pwbsladek/jenkins-amazonlinux2-jnlp-slave-base:latest
 
 BUILD_DATE:=$(shell date -u +'%Y-%m-%dT%H:%M:%SZ')
 VCS_REF:=$(shell git log --pretty=format:'%h' -n 1)

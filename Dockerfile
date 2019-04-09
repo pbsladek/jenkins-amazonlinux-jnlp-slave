@@ -11,8 +11,8 @@ ARG gid=1000
 ARG AGENT_WORKDIR=/home/${user}/agent
 
 LABEL maintainer="Paul Sladek" \
-  org.label-schema.name="Jenkins amazon-linux 2 jnlp slave base" \
-  org.label-schema.description="Jenkins amazon-linux 2 jnlp slave base" \
+  org.label-schema.name="Jenkins Amazon Linux 2 jnlp slave base" \
+  org.label-schema.description="Jenkins Amazon Linux 2 jnlp slave base" \
   org.label-schema.usage="/README.md" \
   org.label-schema.url="https://github.com/pbsladek/jenkins-amazonlinux2-jnlp-slave-base" \
   org.label-schema.vcs-url="git@github.com:pbsladek/jenkins-amazonlinux2-jnlp-slave-base.git" \
