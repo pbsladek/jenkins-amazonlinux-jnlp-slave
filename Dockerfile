@@ -23,7 +23,11 @@ LABEL maintainer="Paul Sladek" \
 ENV HOME /home/${user}
 ENV AGENT_WORKDIR=${AGENT_WORKDIR}
 
-RUN yum install shadow-utils.x86_64 -y && amazon-linux-extras install corretto8
+RUN amazon-linux-extras enable corretto8 && \
+  yum clean metadata && \
+  yum install java-1.8.0-amazon-corretto shadow-utils.x86_64 -y && \
+  yum clean all && \
+  rm -rf /var/cache/yum
 
 RUN groupadd -g ${gid} ${group}
 
