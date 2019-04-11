@@ -1,4 +1,4 @@
-Jenkins Amazon Linux jnlp slave base
+Jenkins Amazon Linux JNLP slave base
 ===
 
 [![Docker Stars](https://img.shields.io/docker/stars/pwbsladek/jenkins-amazonlinux2-jnlp-slave-base.svg)](https://hub.docker.com/r/pwbsladek/jenkins-amazonlinux2-jnlp-slave-base)
@@ -22,7 +22,7 @@ In that image, the container is launched externally and attaches to Jenkins.
 This image may instead be used to launch an agent using the **Launch method** of **Launch agent via execution of command on the master**. Try for example
 
 ```sh
-docker run -i --rm --name agent --init pbsladek/jenkins-amazonlinux-jnlp-slave java -jar /usr/share/jenkins/slave.jar
+docker run -i --rm --name agent --init pwbsladek/jenkins-amazonlinux2-jnlp-slave-base java -jar /usr/share/jenkins/slave.jar
 ```
 
 after setting **Remote root directory** to `/home/jenkins/agent`.
@@ -35,5 +35,5 @@ which provides logging by default and change the JAR Caching behavior.
 Call example:
 
 ```sh
-docker run -i --rm --name agent1 --init -v agent1-workdir:/home/jenkins/agent pbsladek/jenkins-amazonlinux-jnlp-slave java -jar /usr/share/jenkins/slave.jar -workDir /home/jenkins/agent
+docker run -i --rm --name agent1 --init -v agent1-workdir:/home/jenkins/agent pwbsladek/jenkins-amazonlinux2-jnlp-slave-base java -jar /usr/share/jenkins/slave.jar -workDir /home/jenkins/agent
 ```
